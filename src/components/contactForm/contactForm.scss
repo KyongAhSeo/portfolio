@@ -1,0 +1,66 @@
+@import "../../global.scss";
+
+form {
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  @include tablet {
+    width: 70%;
+    height: 50%;
+  }
+
+  input {
+    width: 300px;
+    height: 30px;
+    font-size: 14px;
+
+    @include mobile {
+      width: 200px;
+      height: 20px;
+    }
+
+    @include tablet {
+      width: 200px;
+      height: 20px;
+    }
+  }
+
+  textarea {
+    width: 300px;
+    height: 150px;
+    font-size: 14px;
+
+    @include mobile {
+      width: 200px;
+      height: 90px;
+    }
+
+    @include tablet {
+      width: 200px;
+      height: 150px;
+    }
+  }
+
+  button {
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: #542e71;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  span {
+    color: green;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+}

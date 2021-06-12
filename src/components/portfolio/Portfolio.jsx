@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import { allPortfolio, mernPortfolio, jsPortfolio } from "../../data";
+import { allPortfolio, reactPortfolio, mernPortfolio, jsPortfolio } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("all");
@@ -12,12 +12,16 @@ export default function Portfolio() {
       title: "All",
     },
     {
+      id: "react",
+      title: "React",
+    },
+    {
       id: "mern",
-      title: "MERN Project",
+      title: "MERN",
     },
     {
       id: "js",
-      title: "Javascript Project",
+      title: "Javascript",
     },
   ];
 
@@ -25,6 +29,9 @@ export default function Portfolio() {
     switch (selected) {
       case "all":
         setData(allPortfolio);
+        break;
+      case "react":
+        setData(reactPortfolio);
         break;
       case "mern":
         setData(mernPortfolio);

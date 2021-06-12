@@ -15,6 +15,15 @@ export default function Work() {
     },
     {
       id: 2,
+      icon: "./assets/writing.png",
+      title: "Portfolio",
+      desc: "포트폴리오 용도로 제작한 React 기반의 웹사이트입니다.",
+      img: "assets/port.png",
+      url: "",
+      notion: "https://www.notion.so/Portfolio-Website-1373242502c84e49994f2eafaf420a14",
+    },
+    {
+      id: 3,
       icon: "./assets/mobile.png",
       title: "Bong Pyeong",
       desc: "부모님께서 운영하시는 음식점을 소개하고자 제작하게 되었습니다. Swiper 라이브러리를 사용한 슬라이더 기능과 자바스크립트 만으로 toggle 기능을 구현하였습니다.",
@@ -23,10 +32,10 @@ export default function Work() {
       notion: "https://www.notion.so/Bongpyeong-6a792e2248d34e7187c9635e63c4f808",
     },
     {
-      id: 3,
+      id: 4,
       icon: "./assets/writing.png",
       title: "Blog",
-      desc: "Node.js와 MongoDB의 흐름을 이해하고 실습하기 위해 제작하였습니다. 블로그 CRUD 기능을 구현하였으며, 클라이언트와 서버 사이에 오고가는 데이터가 어떤 것인지 둘의 연결이 어떠한 원리로 작동되는 것인지 공부하는 기회가 되었습니다. ",
+      desc: "Node.js와 MongoDB의 흐름을 이해하고 실습하기 위해 제작하였습니다. 블로그 CRUD 기능을 공부하는 기회가 되었습니다. ",
       img: "assets/blogapp.png",
       url: "https://polar-plains-99011.herokuapp.com/",
       notion: "https://www.notion.so/Blog-0cd5acb9734c45ddb587bddedea546c3",
@@ -35,7 +44,7 @@ export default function Work() {
 
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 3)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0); //오른쪽 arrow 클릭시
   };
 
